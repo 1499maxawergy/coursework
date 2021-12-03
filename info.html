@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+
+    <meta property="og:title" content="A&amp;C | Информация">
+    <meta property="og:site_name" content="Asteroids & Comets">
+    <meta property="og:url" content="https://maxawergy.ru">
+    <meta property="og:description" content="Самые известные астероиды и кометы.">
+    <meta property="og:image" content="https://cdnn21.img.ria.ru/images/92346/65/923466534_0:525:5600:3675_600x0_80_0_0_aa391e784a07f7f6fd75e065d643b3c3.jpg">
+
+    <meta charset="UTF-8">
+    <title>A&amp;C | Информация</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="src/favicon.png">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style-header.css">
+    <link rel="stylesheet" href="css/style-main-info.css">
+    <link rel="stylesheet" href="css/style-footer.css">
+
+</head>
+<body>
+
+<!-- HEADER -->
+<!-- Список навигации через ul-->
+
+<header>
+    <nav>
+        <div class="header-area">
+            <div id="header-logo" onclick="window.open('./index.html', '_self')"></div>
+
+            <div id="burger-menu">
+                <div id="burger-menu-img" onclick="dropMenu()">
+                    <img id="burger-img" src="src/burger-menu.png" alt="menu">
+                </div>
+            </div>
+
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+
+<!-- MAIN -->
+<!-- Выбор из двух -->
+
+<main>
+    <div class="main-area">
+        <div class="main-comet" onclick="window.open('./comets.html', '_self')">
+            Кометы
+            <img src="/src/comet-choose.png" alt="comet">
+        </div>
+        <div class="main-asteroid" onclick="window.open('./asteroids.html', '_self')">
+            Астероиды
+            <img src="/src/asteroid-choose.png" alt="asteroid">
+        </div>
+    </div>
+
+</main>
+
+<!-- FOOTER -->
+<!-- Flex-сетка для строк и иконок соц. сетей -->
+
+<footer>
+    <div class="footer-area">
+        <div class="footer-info">
+            <div id="footer-FIO">Милько Максим Александрович</div>
+            <div id="footer-group">ИКБО-16-20</div>
+            <div id="footer-tel"><a href="tel:+79858980019">+79858980019</a></div>
+        </div>
+        <div class="footer-social-media">
+            <a href="https://vk.com/maxawergy" target="_blank">
+                <div id="Vk"></div>
+            </a>
+            <a href="https://instagram.com/1147maxawergy" target="_blank">
+                <div id="Inst"></div>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="scripts/script-burger-menu.js"></script>
+</body>
+</html>

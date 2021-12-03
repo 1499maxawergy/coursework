@@ -1,0 +1,45 @@
+
+/*MAIN*/
+
+div.main-area{
+    margin: 3.8vw 0;
+    display: flex;
+    flex-direction: row;
+    column-gap: .8vw;
+}
+div.main-image{
+    flex-basis: 45%;
+    display: flex;
+    justify-content: space-around;
+}
+div.main-info{
+    flex-basis: 50%;
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: calc(15px + .8vw);
+    color: #C5C6C7;
+    letter-spacing: 2px;
+    text-align: left;
+    margin: auto;
+    padding: 0 .9vw;
+}
+div.main-image img{
+    width: 50vw;
+    height: auto;
+    margin: auto;
+}
+@media (max-width: 600px) {
+    div.main-area{
+        flex-direction: column;
+        row-gap: .8vw;
+    }
+    div.main-image, div.main-info{
+        flex-basis: 100%;
+    }
+    div.main-image img{
+        width: 96vw;
+    }
+    #main-area-1, #main-area-3{
+        flex-direction: column-reverse;
+    }
+}

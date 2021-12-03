@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+body{
+    background: #1F2833;
+}
+hr.line-parts{
+    border: none;
+    background-color: #66FCF1;
+    color: #66FCF1;
+    height: 2px;
+}
+/*HEADER*/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+div.header-area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #1F2833;
+    border-bottom: 2px solid #66FCF1;
+}
+#header-logo{
+    flex-basis: 64px;
+    width: 64px;
+    height: 67px;
+    background: url("../src/favicon.png") no-repeat;
+    cursor: pointer;
+}
+#header-logo:hover{
+    background: url("../src/favicon-red.png");
+}
+#burger-menu{
+    flex-basis: 0;
+    display: none;
+    height: 64px;
+}
+#burger-menu-img{
+    width: 64px;
+    height: 64px;
+    margin: auto;
+    cursor: pointer;
+}
+#navigation {
+    display: block;
+    flex-basis: calc(100% - 64px);
+    list-style: none;
+    margin: 3px 0 5px;
+    padding: 25px 0 5px;
+    text-align: center;
+}
+#navigation li {display: inline-block;}
+#navigation li:after {
+    content: "|";
+    color: #606060;
+    display: inline-block;
+    vertical-align:top;
+}
+#navigation li:last-child:after {content: none;}
+#navigation a {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+#navigation a, #navigation a:visited {color: #9d999d;}
+#navigation a.current, #navigation a:hover{color: #66FCF1;}
+#navigation a:before,
+#navigation a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -1px;
+    left: 50%;
+    background: #66FCF1;
+    transition: .8s;
+}
+#navigation a:hover:before, #navigation .current:before {left: 0;}
+#navigation a:hover:after, #navigation .current:after {right: 0;}
+@media (max-width: 600px) {
+    #navigation li {
+        display: block;
+    }
+    #navigation li:after {
+        content: none;
+    }
+    #navigation a {
+        padding: 25px 0 20px;
+        margin: 0 30px;
+    }
+    #navigation a:after, #navigation a:before{
+        background: #1F2833;
+    }
+    #burger-menu{
+        display: flex;
+        flex-basis: calc(100% - 64px);
+    }
+    #burger-menu-img{
+        position: absolute;
+        right: .7vw;
+    }
+    #navigation {
+        padding-top: 0;
+        display: none;
+        flex-basis: 100%;
+    }
+}

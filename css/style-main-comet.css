@@ -1,0 +1,26 @@
+div.description-area{
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: calc(25px + .8vw);
+    color: #C5C6C7;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 2vw 0;
+}
+@media (max-width: 750px) {
+    div#main-area-1, div#main-area-6{
+        flex-direction: column-reverse;
+        row-gap: .8vw;
+    }
+    div#main-area-6{
+        flex-direction: column;
+    }
+    div#main-area-1 img, div#main-area-6 img{
+        width: 96vw;
+    }
+}
+@media (max-width: 600px) {
+    #main-area-5, #main-area-7{
+        flex-direction: column-reverse;
+    }
+}
